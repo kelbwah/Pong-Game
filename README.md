@@ -3,4 +3,5 @@ This is a simple pong game that plays music if you download the retro_music.wav.
 
 Controls:
 wasd for left paddle
+
 dpad arrows for right paddle.
