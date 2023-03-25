@@ -134,7 +134,7 @@ while running:
     if keys[pygame.K_p] and paused_music == False:
         music_pause()
         paused_music = True
-    elif keys[pygame.K_p] and paused_music == True:
+    elif keys[pygame.K_k] and paused_music == True:
         music_unpause()
 
     #CREATES THE SCREEN
@@ -151,7 +151,7 @@ while running:
 
     #Tells the user to press 'p' to pause the music
     font = pygame.font.Font('freesansbold.ttf', 15)
-    pause_text = font.render('Press \'p\' to pause and resume music', True, white, None)
+    pause_text = font.render('Press \'p\' to pause music and Press \'k\' to resume music', True, white, None)
     pause_text_rect = pause_text.get_rect()
     pause_text_rect.topleft = (5, 15)
     screen.blit(pause_text, pause_text_rect)
